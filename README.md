@@ -52,7 +52,7 @@ In this project, as stated in the title, results were obtained through **XGBoost
 | 11 | 11 | 1066 non-null | int64
 | 12 | 12 | 1066 non-null | int64
 
-You can find plot of test and train accuracy in ***Plot*** file. Accuracy values and also plot can change a bit after you run the algorithm.
+You can find plot of test and train accuracy in ***Plot*** folder. Accuracy values and also plot can change a bit after you run the algorithm.
 
 ### Predicting Area
 
