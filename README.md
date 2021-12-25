@@ -1,5 +1,5 @@
 
-# Predicting Solar Flares with Using XGBoost and Artificial Neural Networks
+# Predicting Solar Flares Class with Using XGBoost and Artificial Neural Networks
 
 
 ## Problem Statement
