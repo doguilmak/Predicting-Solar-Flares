@@ -7,7 +7,8 @@
 The purpose of this study is based on the available data, it was estimated whether flares are **common, moderate or severe**. In addition, the ***solar_flare_area_XGBoost.py*** algorithm that estimates the size of the fires has been indicated.
 
 <p align="center">
-    <img src="https://images.ctfassets.net/cnu0m8re1exe/1RiWk3i0ceklxImgCFDrTD/af90389b5fadb31b7142b9f98247f917/Untitled_design__54_.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill"> 
+    <img src="https://images.ctfassets.net/cnu0m8re1exe/1RiWk3i0ceklxImgCFDrTD/af90389b5fadb31b7142b9f98247f917/Untitled_design__54_.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill
+"> 
 </p>
 
 ## Datasets
@@ -92,9 +93,9 @@ In this project, as stated in the title, results were obtained through **XGBoost
 
 **Attribute Characteristics:** Categorical
 
----
 
-### Predicting Flare Area
+
+## Predicting Flare Area
 
 For the area prediction I used ***flare.data2*** dataset.
 
@@ -113,9 +114,8 @@ Model predicted class as **[0.].**
 
 Process took 0.16031527519226074 seconds.
 
----
 
-### Predicting Flare Classes
+## Predicting Flare Classes
 
  1. #### Predicting C-class
 
