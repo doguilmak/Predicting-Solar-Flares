@@ -1,4 +1,4 @@
-<h1  align=center><font  size = 6>Predicting Solar Flares Class with XGBoost and Artificial Neural Networks</font></h1>
+<h1  align=center><font  size = 6>Predicting Solar Flares and Flare Area Classes</font></h1>
 
 <p align="center">
     <img src="https://images.ctfassets.net/cnu0m8re1exe/1RiWk3i0ceklxImgCFDrTD/af90389b5fadb31b7142b9f98247f917/Untitled_design__54_.png?fm=jpg&fl=progressive&w=660&h=433&fit=fill" height=400  width=1000> 
