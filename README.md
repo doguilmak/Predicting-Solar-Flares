@@ -10,13 +10,26 @@
 
 <h2>Statement</h2>
 
-<p>The purpose of this study is based on the available data, it was estimated whether flares are <i>common, moderate or severe</i>. In addition, the <i>solar_flare_area_XGBoost.py</i> algorithm that estimates the size of the fires has been indicated. You can run, modify and download your own model from codes. Accuracy can change due to parameters. Please let me know the best parameters.</p>
+The purpose of this study is based on the available data, it was estimated numbers of the <i>solar flares</i> production in spesific region on sun in the following <i>24 hours (with classes)</i>. I made <i>multi-output neural network model</i> for the predict dependent variables. Accuracy can change due to parameters. Please let me know the best parameters.  You can run, modify and download your own model from codes. Accuracy can change due to parameters. Please let me know the best parameters.</p>
+
+<br>  
+
+<h2>Keywords</h2>
+
+<ul>
+	<li>Multi-Output</li>
+	<li>Neural Networks</li>
+	<li>Space</li>
+	<li>Sun</li>
+	<li>Classification</li>
+	<li>Deep Learning</li>
+</ul>  
 
 <br>
 
 <h2>Datasets</h2>
 
-<p>Datasets are downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Solar+Flare">archive.ics.uci.edu</a> website. You can find the details of the datasets in that website and also in the <i>flare.names</i> named file. <i>flare.data1</i> dataset has <i>13 columns</i> and <i>323 rows without the header</i> and <i>flare.data2</i> dataset has <i>13 columns</i> and <i>1066 rows without the header</i>. The database contains 3 potential classes, one for the number of times a certain type of solar flare occured in a 24 hour period. Each instance represents captured features for 1 active region on the sun. The data are divided into two sections. The second section (flare.data2) has had much more error correction applied to the it, and has consequently been treated as more reliable.</p>
+<p>Datasets are downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Solar+Flare">archive.ics.uci.edu</a> website. You can find the details of the datasets in that website and also in the <i>flare.names</i> named file. <i>flare.data1</i> dataset has <i>13 columns</i> and <i>323 rows without the header</i> and <i>flare.data2</i> dataset has <i>13 columns</i> and <i>1066 rows without the header</i>. The database contains 3 potential classes, one for the number of times a certain type of solar flare occured in a 24 hour period. Each instance represents captured features for 1 active region on the sun. The data are divided into two sections. The second section <i>(flare.data2)</i> has had much more error correction applied to the it, and has consequently been treated as more reliable. This informations had refered from  <a href="https://archive.ics.uci.edu/ml/datasets/Solar+Flare">archive.ics.uci.edu</a> website.</p>
 
 <b>Attribute Information:</b>
 
@@ -33,11 +46,12 @@
 	<li>Area of the largest spot (1 = <=5, 2 = >5)</li>  
 </ol>
 
-<b>From all these predictors three classes of flares are predicted, which are represented in the last three columns.</b> 
 
-11. C-class flares production by this region in the following 24 hours (common flares); Number  
-12. M-class flares production by this region in the following 24 hours (moderate flares); Number  
-13. X-class flares production by this region in the following 24 hours (severe flares); Number
+<b>From all these predictors three classes of flares are predicted, which are represented in the last three columns.</b>  
+
+11. <i>C-class flares</i> production by this region in the following 24 hours (common flares)
+12. <i>M-class flares</i> production by this region in the following 24 hours (moderate flares)
+13. <i>X-class flares</i> production by this region in the following 24 hours (severe flares)
 
 <br>
 
@@ -47,26 +61,24 @@ Gary Bradshaw: gbradshaw@clipr.colorado.EDU</p>
 
 <br>
 
+<h2>Predicting Number of the Flares in Region (with class)</h2>
+
+<p>Please look at <a  href="">pred_solar_flare_class_ann.ipynb</a> file to see more details about the structure. You can see the <i>multi-output model</i> structure on the below. It gets inputs as 9 independent variables and gives 3 outputs (C, M, X classes).</p>
+
+<div align="center">
+	<img width=700  height=700 src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/model.png">
+</div>
+
+<p>Every class has different <i>dense layer</i> before the <i>output layer</i>. <code>c_output</code> has <i>32</i>, <code>m_output</code> has <i>64</i> and <code>x_output</code> has <i>16</i> neurons. <code>c_output</code> be retrived directly from <code>dense_3</code>, <code>m_output</code> be retrived directly from <code>dense_4</code> and <code>x_output</code> be retrived directly from <code>dense_5</code>. You can use the model model with loading <a  href="">model.h5</a> or you can use the whole model <a  href="">here</a>.</p>
+
+<br>
+
 <h2>Predicting Flare Classes</h2>
 
 | C Class Flares Model Accuracy | M Class Flares Model Accuracy | X Class Flares Model Accuracy |
 |--|--|--|
 | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/C-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/M-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/X-Class_flares_model_accuracy.png"> |
 | XGBoost Accuracy score: 0.897196261682243 | XGBoost Accuracy score: 0.8785046728971962 | XGBoost Accuracy score: 0.9906542056074766 | 
-
-<br>
-
-<h2>Predicting Flare Area</h2>
-
-<p>For the area prediction I used <b>flare.data2</b> dataset.
-
-Confusion Matrix(XGBoost):</p>
-
-| 341 | 4 |
-|--|--|
-| **1** | **6** |
-
-<b>Accuracy score(XGBoost): 0.9857954545454546</b>
 
 <br>
 
