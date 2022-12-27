@@ -36,7 +36,7 @@ Original file is located at
 
 <h2>Datasets</h2>
 
-<p>Datasets are downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Solar+Flare">archive.ics.uci.edu</a> website. You can find the details of the datasets in that website and also in the <i>flare.names</i> named file. <i>flare.data1</i> dataset has <i>13 columns</i> and <i>323 rows without the header</i> and <i>flare.data2</i> dataset has <i>13 columns</i> and <i>1066 rows without the header</i>. The database contains 3 potential classes, one for the number of times a certain type of solar flare occured in a 24 hour period. Each instance represents captured features for 1 active region on the sun. The data are divided into two sections. <b>The second section (flare.data2) has had much more error correction applied to the it, and has consequently been treated as more reliable. ()</b></p>
+<p>Datasets are downloaded from <a href="https://archive.ics.uci.edu/ml/datasets/Solar+Flare">archive.ics.uci.edu</a> website. You can find the details of the datasets in that website and also in the <i>flare.names</i> named file. <i>flare.data1</i> dataset has <i>13 columns</i> and <i>323 rows without the header</i> and <i>flare.data2</i> dataset has <i>13 columns</i> and <i>1066 rows without the header</i>. The database contains 3 potential classes, one for the number of times a certain type of solar flare occured in a 24 hour period. Each instance represents captured features for 1 active region on the sun. The data are divided into two sections. <b>The second section (flare.data2) has had much more error correction applied to the it, and has consequently been treated as more reliable.</b></p>
 
 <br>
 
