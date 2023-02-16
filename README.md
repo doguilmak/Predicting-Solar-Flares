@@ -66,7 +66,7 @@ Gary Bradshaw: gbradshaw@clipr.colorado.EDU</p>
 <p>Please look at <a  href="https://github.com/doguilmak/Predicting-Solar-Flares-and-Flare-Area-Classes/blob/main/pred_solar_flare_class_ann.ipynb">pred_solar_flare_class_ann.ipynb</a> file to see more details about the structure. You can see the <i>multi-output model</i> structure on the below. It gets inputs as 9 independent variables and gives 3 outputs (C, M, X classes).</p>
 
 <div align="center">
-	<img width=700  height=700 src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/model.png">
+	<img width=700  height=700 src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/assets/model.png">
 </div>
 
 <p>Every class has different <i>dense layer</i> before the <i>output layer</i>. <code>c_output</code> has <i>32</i>, <code>m_output</code> has <i>64</i> and <code>x_output</code> has <i>16</i> neurons. <code>c_output</code> be retrived directly from <code>dense_3</code>, <code>m_output</code> be retrived directly from <code>dense_4</code> and <code>x_output</code> be retrived directly from <code>dense_5</code>. You can use the model model with loading <a  href="https://github.com/doguilmak/Predicting-Solar-Flares-and-Flare-Area-Classes/blob/main/my_model.h5">my_model.h5</a> or you can use the whole model <a  href="https://github.com/doguilmak/Predicting-Solar-Flares-and-Flare-Area-Classes/tree/main/my_model">here</a>.</p>
@@ -77,7 +77,7 @@ Gary Bradshaw: gbradshaw@clipr.colorado.EDU</p>
 
 | C Class Flares Model Accuracy | M Class Flares Model Accuracy | X Class Flares Model Accuracy |
 |--|--|--|
-| <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/C-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/M-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/Plots/X-Class_flares_model_accuracy.png"> |
+| <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/assets/C-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/assets/M-Class_flares_model_accuracy.png"> | <img src="https://raw.githubusercontent.com/doguilmak/Predicting-Solar-Flares-with-XGBoost-and-ANN/main/assets/X-Class_flares_model_accuracy.png"> |
 | XGBoost Accuracy score: 0.897196261682243 | XGBoost Accuracy score: 0.8785046728971962 | XGBoost Accuracy score: 0.9906542056074766 | 
 
 <br>
