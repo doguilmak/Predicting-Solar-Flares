@@ -61,7 +61,7 @@ Gary Bradshaw: gbradshaw@clipr.colorado.EDU</p>
 
 <br>
 
-<h2>Predicting Number of the Flares in Region (with class)</h2>
+<h2>Predicting Number of the Flares in Region (with Class)</h2>
 
 <p>Please look at <a  href="https://github.com/doguilmak/Predicting-Solar-Flares-and-Flare-Area-Classes/blob/main/pred_solar_flare_class_ann.ipynb">pred_solar_flare_class_ann.ipynb</a> file to see more details about the structure. You can see the <i>multi-output model</i> structure on the below. It gets inputs as 9 independent variables and gives 3 outputs (C, M, X classes).</p>
 
